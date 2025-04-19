@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #121212;
+    color: #fff;
+  }
+  header {
+    background: #1f1f1f;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffbc00;
+  }
+  nav a {
+    color: #ccc;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  nav a:hover {
+    color: #ffbc00;
+  }
+  .hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('banner.jpg') center/cover no-repeat;
+  }
+  .hero h1 {
+    font-size: 3rem;
+    color: #ffbc00;
+  }
+  .hero p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: #ccc;
+  }
+  .btn {
+    padding: 12px 30px;
+    background: #ffbc00;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+  }
+  .btn:hover {
+    background: #fff;
+    color: #000;
+  }
+  .features {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 20px;
+    background: #181818;
+  }
+  .feature {
+    max-width: 300px;
+    text-align: center;
+  }
+  .feature h2 {
+    color: #ffbc00;
+    margin-bottom: 10px;
+  }
+  footer {
+    background: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+    color: #aaa;
+  }
+  .about-section {
+    padding: 60px 40px;
+    background-color: #121212;
+    color: #eee;
+    max-width: 1000px;
+    margin: auto;
+  }
+  .about-section h1 {
+    text-align: center;
+    color: #ffbc00;
+    margin-bottom: 30px;
+  }
+  .about-section p {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ccc;
+  }
+  .about-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  .about-box {
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 16px;
+    flex: 1;
+    min-width: 280px;
+    max-width: 320px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  }
+  .about-box h2 {
+    color: #ffbc00;
+    margin-bottom: 15px;
+  }
+  .about-box p, .about-box li {
+    color: #ccc;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  .about-box ul {
+    padding-left: 20px;
+  }
+  .menu-section {
+    padding: 60px 40px;
+    background-color: #121212;
+    color: #eee;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .menu-section h1 {
+    text-align: center;
+    color: #ffbc00;
+    margin-bottom: 40px;
+  }
+  .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+  .menu-item {
+    background: #1f1f1f;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+  }
+  .menu-item:hover {
+    transform: scale(1.03);
+  }
+  .menu-item img {
+    width: 100%;
+    height: auto;
+  }
+  .menu-item h3 {
+    margin: 15px;
+    color: #ffbc00;
+  }
+  .menu-item p {
+    margin: 0 15px 10px;
+    color: #ccc;
+  }
+  .menu-item span {
+    display: block;
+    margin: 0 15px 15px;
+    font-weight: bold;
+    color: #fff;
+  }
+  .order-section {
+    padding: 60px 40px;
+    background-color: #121212;
+    color: #eee;
+    max-width: 600px;
+    margin: auto;
+  }
+  .order-section h1 {
+    text-align: center;
+    color: #ffbc00;
+    margin-bottom: 40px;
+  }
+  .order-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .order-form label {
+    font-weight: bold;
+    color: #ccc;
+  }
+  .order-form input,
+  .order-form select {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background: #1f1f1f;
+    color: #fff;
+  }
+  .order-form input:focus,
+  .order-form select:focus {
+    outline: 2px solid #ffbc00;
+  }
+  .order-form button {
+    padding: 12px;
+    background-color: #ffbc00;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .order-form button:hover {
+    background-color: #e0a800;
+  }
+  .login-section {
+    padding: 60px 40px;
+    background-color: #121212;
+    color: #eee;
+    max-width: 500px;
+    margin: auto;
+  }
+  .login-section h1 {
+    text-align: center;
+    color: #ffbc00;
+    margin-bottom: 30px;
+  }
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .login-form label {
+    font-weight: bold;
+    color: #ccc;
+  }
+  .login-form input {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background: #1f1f1f;
+    color: #fff;
+  }
+  .login-form input:focus {
+    outline: 2px solid #ffbc00;
+  }
+  .login-form button {
+    padding: 12px;
+    background-color: #ffbc00;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .login-form button:hover {
+    background-color: #e0a800;
+  }
+  .admin-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #121212;
+    color: #fff;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #1e1e1e;
+    padding: 30px 20px;
+  }
+  .sidebar h2 {
+    color: #ffbc00;
+    margin-bottom: 30px;
+  }
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  .sidebar ul li {
+    margin-bottom: 20px;
+  }
+  .sidebar ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    transition: 0.3s ease;
+  }
+  .sidebar ul li a:hover {
+    color: #ffbc00;
+  }
+  
+  .dashboard {
+    flex: 1;
+    padding: 40px;
+  }
+  .dashboard h1 {
+    color: #ffbc00;
+    margin-bottom: 30px;
+  }
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  .card {
+    background: #1f1f1f;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    text-align: center;
+  }
+  .card h3 {
+    color: #ffbc00;
+    margin-bottom: 10px;
+  }
+  .card p {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .attendance-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+    margin-top: 30px;
+  }
+  .attendance-form label {
+    font-weight: bold;
+    color: #ccc;
+  }
+  .attendance-form input,
+  .attendance-form select {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background: #1f1f1f;
+    color: #fff;
+  }
+  .attendance-form button {
+    padding: 12px;
+    background-color: #ffbc00;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .payslip-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+    margin-top: 30px;
+  }
+  .payslip-form label {
+    font-weight: bold;
+    color: #ccc;
+  }
+  .payslip-form input,
+  .payslip-form select {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background: #1f1f1f;
+    color: #fff;
+  }
+  .payslip-form button {
+    padding: 12px;
+    background-color: #ffbc00;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .password-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+    margin-top: 30px;
+  }
+  .password-form label {
+    font-weight: bold;
+    color: #ccc;
+  }
+  .password-form input {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background: #1f1f1f;
+    color: #fff;
+  }
+  .password-form button {
+    padding: 12px;
+    background-color: #ffbc00;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+              

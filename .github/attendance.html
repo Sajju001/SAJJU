@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Staff Attendance - SAJJAD Admin</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="admin-container">
+    <aside class="sidebar">
+      <h2>👨‍💼 Admin Panel</h2>
+      <ul>
+        <li><a href="admin-dashboard.html">Dashboard</a></li>
+        <li><a href="#">Orders</a></li>
+        <li><a href="attendance.html" class="active">Staff Attendance</a></li>
+        <li><a href="payslip.html">Payslips</a></li>
+        <li><a href="change-password.html">Change Password</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </aside>
+
+    <main class="dashboard">
+      <h1>Mark Attendance</h1>
+      <form class="attendance-form">
+        <label for="employee">Select Staff:</label>
+        <select id="employee" name="employee" required>
+          <option value="">-- Choose Staff --</option>
+          <option value="Ali">Ali</option>
+          <option value="Zara">Zara</option>
+          <option value="Sajjad">Sajjad</option>
+        </select>
+
+        <label for="status">Status:</label>
+        <select id="status" name="status" required>
+          <option value="">-- Select --</option>
+          <option value="Present">Present</option>
+          <option value="Absent">Absent</option>
+        </select>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required />
+
+        <button type="submit">Mark Attendance</button>
+      </form>
+    </main>
+  </div>
+</body>
+</html>
